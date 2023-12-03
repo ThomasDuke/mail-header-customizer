@@ -2,11 +2,12 @@
 Script whose purpose is to send e-mails by freely changing the headers, making it possible to test the security of a domain, and to check DMARC records.
 
 ### [EN]
-installation path:
+Installation path:
 
-run script python_and_pip_install.ps1, which automatically installs python and pip, as well as the python libraries needed to run the program.
+Run script python_and_pip_install.ps1, which automatically installs python and pip, as well as the python libraries needed to run the program.
 
 Before taking any action with the script, you MUST enter your mail server identifiers in line 68 and 69 ("sender_email" and "password" variables). Save the file and close.
+You also need to change the SMTP server.
 
 You then have two choices:
 
@@ -22,11 +23,12 @@ Once finished, the executable file is located in the "dist" folder.
 
 
 ### [FR]
-chemin d'installaion:
+Chemin d'installaion:
 
-exécuter le script python_and_pip_install.ps1, qui va installer automatiquement python et pip, ainsi que les bibliotèques python nécessaires pour le focntionnement du programme.
+Exécuter le script python_and_pip_install.ps1, qui va installer automatiquement python et pip, ainsi que les bibliotèques python nécessaires pour le focntionnement du programme.
 
 Avant toute action avec le script, il FAUT mettre vos identifiants de serveur mail dans les variables lignes 68 et 69 (variables "sender_email" et "password"). Sauvegardez le fichier et fermez.
+Il faut aussi changer le serveur SMTP.
 
 Ensuite, vous avez deux choix:
 

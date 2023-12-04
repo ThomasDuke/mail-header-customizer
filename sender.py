@@ -98,6 +98,8 @@ class EmailApp(wx.Frame):
             server.starttls(context=context)
             server.login(sender_email, password)
             server.sendmail(sender_email, receiver_email, message.as_string())
+            success_dialog = wx.MessageDialog(self.panel, "Email sent successfully!", "Success", wx.OK | wx.ICON_INFORMATION)
+            success_dialog.ShowModal()
 
     def on_mode_select(self, event):
         selected_mode = self.mode_choice.GetSelection()

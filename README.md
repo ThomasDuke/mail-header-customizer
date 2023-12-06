@@ -2,6 +2,7 @@
 Script whose purpose is to send e-mails by freely changing the headers, making it possible to test the security of a domain, and to check DMARC records.
 
 ## [EN]
+
 ### Installation path:
 
 Run script python_and_pip_install.ps1, which automatically installs python and pip, as well as the python libraries needed to run the program.

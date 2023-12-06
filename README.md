@@ -1,8 +1,8 @@
 # mail-header-cutomizer
 Script whose purpose is to send e-mails by freely changing the headers, making it possible to test the security of a domain, and to check DMARC records.
 
-### [EN]
-Installation path:
+## [EN]
+### Installation path:
 
 Run script python_and_pip_install.ps1, which automatically installs python and pip, as well as the python libraries needed to run the program.
 
@@ -69,9 +69,9 @@ X-Dmarc: reject/quarantine/none
 ```
 For more headers, please refer to this link: https://www.iana.org/assignments/message-headers/message-headers.xhtml
 
-### [FR]
+## [FR]
 
-## Chemin d'installaion:
+### Chemin d'installaion:
 
 Exécuter le script python_and_pip_install.ps1, qui va installer automatiquement python et pip, ainsi que les bibliotèques python nécessaires pour le focntionnement du programme.
 

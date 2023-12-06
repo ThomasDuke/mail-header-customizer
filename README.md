@@ -36,7 +36,7 @@ The DMARC Check feature would therefore be a quick way of finding out whether or
 
 
 ### From :
-Enter the e-mail address which will be the source of the e-mail. As this address will be hard-coded in the e-mail headers, you can either enter an e-mail address only, or in the format "bash Thomas <test@example.com>````". In the former case, the recipient will only see "test" as the source username, whereas in the latter, the username will be "Thomas".
+Enter the e-mail address which will be the source of the e-mail. As this address will be hard-coded in the e-mail headers, you can either enter an e-mail address only, or in the format ```bash Thomas <test@example.com>```. In the former case, the recipient will only see "test" as the source username, whereas in the latter, the username will be "Thomas".
 For DMARC Check functionality, you need to enter an address, not just a domain name.
 
 ### To :
@@ -104,7 +104,7 @@ La fonctionnalité DMARC Check serait donc un moyen rapide de savoir si votre ma
 ![2023-12-06_17h16_21](https://github.com/ThomasDuke/mail-header-customizer/assets/51382343/01d6cf9a-cc33-4575-9d85-2554c076e443)
 
 ### From :
-Entrez l’adresse mail qui sera en source du mail. Etant donné que cette adresse sera inscrite en dur dans les en-têtes du mail, vous pouvez soit entrer uniquement une adresse mail, soit sous un format « ```bash Thomas <test@example.com>``` ». Dans le premier cas, le destinataire verra en nom d’utilisateur source uniquement « test », alors que dans le second cas, le nom d’utilisateur sera « Thomas ».
+Entrez l’adresse mail qui sera en source du mail. Etant donné que cette adresse sera inscrite en dur dans les en-têtes du mail, vous pouvez soit entrer uniquement une adresse mail, soit sous un format ```bash Thomas <test@example.com>```. Dans le premier cas, le destinataire verra en nom d’utilisateur source uniquement « test », alors que dans le second cas, le nom d’utilisateur sera « Thomas ».
 Pour la fonctionnalité DMARC Check, il faut entrer une adresse et non seulement un nom de domaine.
 
 ### To :

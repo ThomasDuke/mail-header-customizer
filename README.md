@@ -12,11 +12,11 @@ You also need to change the SMTP server.
 You then have two choices:
 
 Either run the script in python:
-```bash
+```
 python sender.py
 ```
 Or create a Windows executable:
-```bash
+```
 pyinstaller --onefile sender.py
 ```
 Once finished, the executable file is located in the "dist" folder.
@@ -36,7 +36,7 @@ The DMARC Check feature would therefore be a quick way of finding out whether or
 
 
 ### From :
-Enter the e-mail address which will be the source of the e-mail. As this address will be hard-coded in the e-mail headers, you can either enter an e-mail address only, or in the format ```bash Thomas <test@example.com>```. In the former case, the recipient will only see "test" as the source username, whereas in the latter, the username will be "Thomas".
+Enter the e-mail address which will be the source of the e-mail. As this address will be hard-coded in the e-mail headers, you can either enter an e-mail address only, or in the format ```Thomas <test@example.com>```. In the former case, the recipient will only see "test" as the source username, whereas in the latter, the username will be "Thomas".
 For DMARC Check functionality, you need to enter an address, not just a domain name.
 
 ### To :
@@ -57,7 +57,7 @@ Then enter your message.
 This option lets you add special headers to your e-mail. For example, if you want the e-mail to look as if it's being sent from an Outlook client:
 Enter "X-Mailer: Outlook Client".
 Here's a list of headers you can add to your e-mail (with examples):
-```bash
+```
 MIME-Version: 1.0
 X-Mailer: Outlook Client
 X-Spam-Flag: YES/NO
@@ -81,11 +81,11 @@ Il faut aussi changer le serveur SMTP.
 Ensuite, vous avez deux choix:
 
 Soit vous exécutez le script en python:
-```bash
+```
 python sender.py
 ```
 Soit vous voulez créer un exécutable Windows:
-```bash
+```
 pyinstaller --onefile sender.py
 ```
 Dès que c'est fini, le fichier exécutable est localisé dans le dossier "dist".
@@ -104,7 +104,7 @@ La fonctionnalité DMARC Check serait donc un moyen rapide de savoir si votre ma
 ![2023-12-06_17h16_21](https://github.com/ThomasDuke/mail-header-customizer/assets/51382343/01d6cf9a-cc33-4575-9d85-2554c076e443)
 
 ### From :
-Entrez l’adresse mail qui sera en source du mail. Etant donné que cette adresse sera inscrite en dur dans les en-têtes du mail, vous pouvez soit entrer uniquement une adresse mail, soit sous un format ```bash Thomas <test@example.com>```. Dans le premier cas, le destinataire verra en nom d’utilisateur source uniquement « test », alors que dans le second cas, le nom d’utilisateur sera « Thomas ».
+Entrez l’adresse mail qui sera en source du mail. Etant donné que cette adresse sera inscrite en dur dans les en-têtes du mail, vous pouvez soit entrer uniquement une adresse mail, soit sous un format ```Thomas <test@example.com>```. Dans le premier cas, le destinataire verra en nom d’utilisateur source uniquement « test », alors que dans le second cas, le nom d’utilisateur sera « Thomas ».
 Pour la fonctionnalité DMARC Check, il faut entrer une adresse et non seulement un nom de domaine.
 
 ### To :
@@ -125,7 +125,7 @@ Vous entrez ensuite votre message.
 Cette option permet d’ajouter des en-têtes particulières dans votre mail. Par exemple, vous voulez faire croire que le mail est envoyé depuis un client Outlook :
 Entrez « X-Mailer: Outlook Client »
 Voici une liste d’en-têtes que vous pouvez ajouter dans votre mail (avec des exemples en valeur):
-```bash
+```
 MIME-Version: 1.0
 X-Mailer: Outlook Client
 X-Spam-Flag: YES/NO

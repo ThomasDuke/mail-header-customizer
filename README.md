@@ -8,6 +8,12 @@ Script whose purpose is to send e-mails by freely changing the headers, making i
 Before taking any action with the script, you MUST enter your mail server identifiers in line 68 and 69 ("sender_email" and "password" variables). Save the file and close.
 You also need to change the SMTP server.
 
+You will also need to install python libraries:
+
+```
+pip install -r requirements.txt
+```
+
 You then have two choices:
 
 Either run the script in python:
@@ -74,6 +80,12 @@ For more headers, please refer to this link: https://www.iana.org/assignments/me
 
 Avant toute action avec le script, il FAUT mettre vos identifiants de serveur mail dans les variables lignes 68 et 69 (variables "sender_email" et "password"). Sauvegardez le fichier et fermez.
 Il faut aussi changer le serveur SMTP.
+
+Vous aurez besoin d'installer les bibliothèques python:
+
+```
+pip install -r requirements.txt
+```
 
 Ensuite, vous avez deux choix:
 

@@ -26,18 +26,18 @@ class EmailApp(wx.Frame):
         self.to_label = wx.StaticText(self.panel, label="To:")
         self.to_input = wx.TextCtrl(self.panel)
 
-        # Choice control for selecting text mode or HTML mode
+        # Contrôle de choix pour sélectionner le mode texte ou le mode HTML
         self.mode_choice = wx.Choice(self.panel, choices=["Text", "HTML"])
         self.mode_choice.Bind(wx.EVT_CHOICE, self.on_mode_select)
 
-        # Larger text input area for the message
+        # Zone de saisie de texte plus grande pour le message
         self.message_input = wx.TextCtrl(self.panel, style=wx.TE_MULTILINE|wx.TE_PROCESS_ENTER|wx.TE_RICH2)
 
-        # Checkbox to enable adding custom headers
+        # Case à cocher pour activer l'ajout d'en-têtes personnalisés
         self.add_headers_checkbox = wx.CheckBox(self.panel, label="Add Headers")
         self.add_headers_checkbox.Bind(wx.EVT_CHECKBOX, self.on_add_headers)
 
-        # Text input for custom headers (initially hidden)
+        # Champ de saisie pour les en-têtes personnalisés (initialement caché)
         self.headers_input = wx.TextCtrl(self.panel, style=wx.TE_MULTILINE|wx.TE_PROCESS_ENTER|wx.TE_RICH2)
         self.headers_input.Hide()
 
@@ -83,12 +83,12 @@ class EmailApp(wx.Frame):
                     message[header_key.strip()] = header_value.strip()
 
 
-        # Depending on the mode selected, set either text or HTML part
-        if self.mode_choice.GetSelection() == 0:  # Text mode
+        # En fonction du mode sélectionné, définir la partie texte ou la partie HTML
+        if self.mode_choice.GetSelection() == 0:  # Mode Text
             text = self.message_input.GetValue()
             part1 = MIMEText(text, "plain")
             message.attach(part1)
-        else:  # HTML mode
+        else:  # Mode HTML
             html = self.message_input.GetValue()
             part2 = MIMEText(html, "html")
             message.attach(part2)
@@ -103,9 +103,9 @@ class EmailApp(wx.Frame):
 
     def on_mode_select(self, event):
         selected_mode = self.mode_choice.GetSelection()
-        if selected_mode == 0:  # Text mode
+        if selected_mode == 0:  # Mode Text
             self.message_input.SetWindowStyle(wx.TE_MULTILINE|wx.TE_PROCESS_ENTER)
-        else:  # HTML mode
+        else:  # Mode HTML
             self.message_input.SetWindowStyle(wx.TE_MULTILINE|wx.TE_PROCESS_ENTER|wx.TE_RICH2)
         self.panel.Layout()
 

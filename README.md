@@ -5,8 +5,10 @@ Script whose purpose is to send e-mails by freely changing the headers, making i
 
 ### Installation path:
 
-Before taking any action with the script, you MUST enter your mail server identifiers in line 68 and 69 ("sender_email" and "password" variables). Save the file and close.
-You also need to change the SMTP server.
+Before taking any action with the script, you MUST enter your SMTP Server and your mail server identifiers.
+![image](https://github.com/ThomasDuke/mail-header-customizer/assets/51382343/bacabbd8-95cf-4d01-8460-7d338783433c)
+
+Save the file and close.
 
 You will also need to install python libraries:
 
@@ -78,8 +80,8 @@ For more headers, please refer to this link: https://www.iana.org/assignments/me
 
 ### Chemin d'installaion:
 
-Avant toute action avec le script, il FAUT mettre vos identifiants de serveur mail dans les variables lignes 68 et 69 (variables "sender_email" et "password"). Sauvegardez le fichier et fermez.
-Il faut aussi changer le serveur SMTP.
+Avant toute action avec le script, vous DEVEZ enregistrer votre serveur SMTP et les identifiants.
+![image](https://github.com/ThomasDuke/mail-header-customizer/assets/51382343/bacabbd8-95cf-4d01-8460-7d338783433c)
 
 Vous aurez besoin d'installer les bibliothèques python:
 
@@ -145,4 +147,3 @@ X-Verify-Helo: -ERR missmatch: mail.test.com->0.0.0.0->.fake_nodots
 X-Dmarc: reject/quarantine/none
 ```
 Pour plus d'en-têtes, veuillez vous référer à ce lien: https://www.iana.org/assignments/message-headers/message-headers.xhtml
-
